@@ -1,3 +1,4 @@
+%AW: Looks good. 0.99/1. Please send my comments below. 
 %Akash Mitra
 %am132
 % InClass1: some simple excerises to get started with MATLAB. Please complete by
@@ -21,6 +22,9 @@ b = a+a
 % x2 creates a 1x2 array of two numeric characters 1 and 1 
 % a2 creates a 1x2 array of two characters 1 and 1 (concatenate string)
 %x2 is a 1x2(two rows) array while x2b is 2x1 (2 columns)
+
+%AW: basically correct but be carefully with terminology. the entries in x2 are numbers, not "numeric characters" - characters
+% only refer to those things in quotes '' as in a2. -0.01. 
 x2 = [x x]
 
 a2 = [a a]
@@ -82,7 +86,7 @@ oneToTen = 1:10;
 oneToTen = [oneToTen, oneToTen+10]
 evenIndices = rem(oneToTen, 2) == 0
 allEven = oneToTen(evenIndices)
-
+%AW: your answer works fine. 2*oneToTen would have been more succicent. 
 x = 0:2:20
 
 % 2. odd numbers from one to nineteen
@@ -125,6 +129,9 @@ m2./m1
 %extra credit: explain why this command gives a warning:
 % tries to prevent rounding off errors when working with precision
 m2/m1
+%AW: this doesn't have to do with rounding errors. This matrix division involves inverting the matrix m1, but 
+%the matrix is not invertible.
+
 %% access particular elements and groups of elements
 
 %define a random matrix
